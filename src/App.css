@@ -1,5 +1,18 @@
+html {
+  height: 1200px;
+  
+  background-color: #212121
+}
+
 .App {
   text-align: center;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
+  border-top-right-radius: 11px;
+  border-top-left-radius: 11px;
+  background-color: #f1f1f1;
 }
 
 .App-logo {
@@ -22,6 +35,34 @@
 .App-link {
   color: #61dafb;
 }
+
+#img {
+  width: 75%;
+  height:auto; 
+  border: 2px solid #282c34;
+}
+
+#root {
+  height: 100%;
+}
+
+.img-box {
+  height: 100%;
+}
+
+.title h2 {
+  margin: 0;
+}
+
+header {
+  background-color: #9bdaf1af;
+  width: 38%;
+  margin: 0 auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
 
 @keyframes App-logo-spin {
   from {
