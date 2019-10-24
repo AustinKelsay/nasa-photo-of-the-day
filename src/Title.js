@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import styled from 'styled-components'; 
 import {
     Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button, Collapse
@@ -11,8 +12,13 @@ const Title = props => {
 
   const toggle = () => setCollapse(!collapse);
 
+  const CardWrapper = styled.div`
+  margin: 0;
+  margin-top: 1%;
+ `;
+
     return (
-      <div className="title">
+      <CardWrapper className="title">
         <Button color="info" onClick={toggle} style={{ marginBottom: '1rem' }}>Info</Button>
         <Collapse isOpen={collapse}>
           <CardBody>
@@ -22,7 +28,7 @@ const Title = props => {
           <a href={props.url}><Button color='primary'>{props.url}</Button></a>
           </CardBody>
           </Collapse>
-      </div>
+      </CardWrapper> 
     );
   };
 

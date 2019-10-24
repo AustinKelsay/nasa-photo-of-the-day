@@ -2,10 +2,16 @@ import React, {useState, useEffect} from "react";
 import "./App.css";
 import Title from "./Title.js"
 import axios from 'axios';
+import styled from 'styled-components'; 
 
 function App() {
 
   const [pic, setPic] = useState();
+
+  const ImgWrapper = styled.div`
+  height: 100%;
+  margin: 1%;
+ `;
 
     useEffect(() => {
         axios
@@ -31,9 +37,9 @@ function App() {
         url={pic.data.url}
         explanation={pic.data.explanation}
       />
-      <div className="img-box">
+      <ImgWrapper>
         <img id='img' src={pic.data.hdurl} alt='nada'></img>
-      </div>
+      </ImgWrapper>
     </div>
   );
 }
