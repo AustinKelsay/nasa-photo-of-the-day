@@ -29,6 +29,7 @@ function App() {
         copyright={pic.data.copyright}
         title={pic.data.title}
         url={pic.data.url}
+        explanation={pic.data.explanation}
       />
       <div className="img-box">
         <img id='img' src={pic.data.hdurl} alt='nada'></img>
